@@ -1,7 +1,7 @@
 # Coding Challenge
 
 ### Background and context
-One component of our platform is administering standardized clinical assessments via our mobile app. In a nutshell, a standardized clinical assessment is a multiple-choice questionnaire that determines symptom severity for disorders such as depression, anxiety, etc. Here’s an example of a common assessment for depression called the PHQ-9: https://www.mdcalc.com/phq-9-patient-health-questionnaire-9.
+One component of our platform is administering standardized clinical assessments via our mobile app. In a nutshell, a standardized clinical assessment is a multiple-choice questionnaire that determines symptom severity for disorders such as depression, anxiety, etc. Here’s an [example](https://www.mdcalc.com/phq-9-patient-health-questionnaire-9) of a common assessment for depression called the PHQ-9.
 
 Using our platform, clinicians are able to pick and choose which standardized clinical assessment(s) they want their patients to complete. A clinician only has to configure this once for each patient, and we’ll then take care of notifying the patient on the proper cadence, having them answer the necessary questions, scoring the assessment, documenting the results, and sharing the results back with the clinician.
 
