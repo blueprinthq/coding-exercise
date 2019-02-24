@@ -12,6 +12,7 @@ To figure out which assessments a given user is assigned to complete, we’ve cr
 
 - [Frank Smith](https://www.mocky.io/v2/5c7164513500006000e9e829)
 - [Jane Doe](https://www.mocky.io/v2/5c7164773500007000e9e82a)
+
 *Note: In reality, this is a single endpoint which is passed a user_id, e.g. `GET /patients/assessments`…because there is no concept of a user_id in the mock endpoints, each endpoint represents a different user.*
 
 The endpoints return an array of assessment objects that are assigned to a given patient. An **assessment** always contains:
