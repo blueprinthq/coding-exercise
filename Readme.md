@@ -12,10 +12,9 @@ To figure out which assessments a given user is assigned to complete, we’ve cr
 
 - [Frank Smith](https://www.mocky.io/v2/5c7164513500006000e9e829)
 - [Jane Doe](https://www.mocky.io/v2/5c7164773500007000e9e82a)
+*Note: In reality, this is a single endpoint which is passed a user_id, e.g. `GET /patients/assessments`…because there is no concept of a user_id in the mock endpoints, each endpoint represents a different user.*
 
-Note: In reality, this is a single endpoint which is passed a user_id, e.g. `GET /patients/assessments`…because there is no concept of a user_id in the mock endpoints, each endpoint represents a different user.
-
-The endpoints return an array of assessment objects that are assigned to a given patient. An assessment always contains:
+The endpoints return an array of assessment objects that are assigned to a given patient. An **assessment** always contains:
 - A unique id
 - Metadata about the assessment (name, display name, total score, cadence)
 - An array of questions
@@ -56,10 +55,10 @@ As a patient answers each question, you will need to keep track of how they answ
 **We value quality over feature-completeness.** It is fine to leave things aside provided you call them out in your project's README. The goal of this code challenge is to help us identify what you consider production-ready code. You should consider this code ready for final review with your colleague, i.e. this would be the last step before deploying to production.
 
 The aspects of your code we will assess include:
-- Clarity: does the README clearly and concisely explains the problem and solution? Are technical tradeoffs explained?
-- Correctness: does the application do what was asked? If there is anything missing, does the README explain why it is missing?
-- Code quality: is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Does object-oriented code follows principles such as the single responsibility principle? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
-- Security: are there any obvious vulnerabilities?
-- UX: is the web interface understandable and pleasing to use? Is the API intuitive?
-- Technical choices: do choices of libraries, databases, architecture etc. seem appropriate for the chosen application?
-- Production-readiness: does the code include monitoring? logging? proper error handling?
+- **Clarity**: does the README clearly and concisely explains the problem and solution? Are technical tradeoffs explained?
+- **Correctness**: does the application do what was asked? If there is anything missing, does the README explain why it is missing?
+- **Code quality**: is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Does object-oriented code follows principles such as the single responsibility principle? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
+- **Security**: are there any obvious vulnerabilities?
+- **UX**: is the web interface understandable and pleasing to use? Is the API intuitive?
+- **Technical choices**: do choices of libraries, databases, architecture etc. seem appropriate for the chosen application?
+- **Production-readiness**: does the code include monitoring? logging? proper error handling?
