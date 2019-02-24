@@ -1,11 +1,11 @@
 # Coding Challenge
 
-## Background and context
+### Background and context
 One component of our platform is administering standardized clinical assessments via our mobile app. In a nutshell, a standardized clinical assessment is a multiple-choice questionnaire that determines symptom severity for disorders such as depression, anxiety, etc. Here’s an example of a common assessment for depression called the PHQ-9: https://www.mdcalc.com/phq-9-patient-health-questionnaire-9.
 
 Using our platform, clinicians are able to pick and choose which standardized clinical assessment(s) they want their patients to complete. A clinician only has to configure this once for each patient, and we’ll then take care of notifying the patient on the proper cadence, having them answer the necessary questions, scoring the assessment, documenting the results, and sharing the results back with the clinician.
 
-## The challenge
+### The challenge
 You will build a portion of the patient-facing experience that allows an individual to complete any assessments that have been assigned to them. This experience should be dynamic, meaning different patients will be assigned different assessments. The code you write must be flexible enough so that patients are only prompted to complete assessments that they’re assigned.
 
 To figure out which assessments a given user is assigned to complete, we’ve created mock endpoints. We have created two test cases for you (feel free to create more on your own), which are presented as two separate endpoints for simplicity:
@@ -26,7 +26,7 @@ Using the JSON response from the endpoint, the patient should be directed throug
 
 As a patient answers each question, you will need to keep track of how they answered so the data can be sent to the backend and ultimately stored in a database. You should store the answer data in a specific format, an example of which can be found [here](https://gist.github.com/dannyfreed/002230ad612e397455732275212f8036)
 
-## Requirements/Specs
+### Requirements/Specs
 - You can complete this challenge using any languages, frameworks, or platforms you'd like
 - Patients should only be able to view/complete assessments that are assigned to them
 - If a patient is assigned more than one assessment, they should be able to answer all questions back-to-back, as if it was a single combined assessment
@@ -42,7 +42,7 @@ As a patient answers each question, you will need to keep track of how they answ
 - Upon answering the final question, simply log/print out the data as you would submit it to the backend POST endpoint (no need to actually make this POST request)
 - When you’re done, host it somewhere (e.g. on Amazon EC2, Heroku, Google AppEngine, TestFlight, etc.)
 
-## Deliverable
+### Deliverable
 - Please send us a link to the hosted repository with your code (e.g. Github, Bitbucket)
 - The repo should include a README that includes the following items:
   - Link to to the hosted application
@@ -52,7 +52,7 @@ As a patient answers each question, you will need to keep track of how they answ
   - Link to other code you're particularly proud of
   - Link to your resume or public profile
 
-## How we review
+### How we review
 We value quality over feature-completeness. It is fine to leave things aside provided you call them out in your project's README. The goal of this code challenge is to help us identify what you consider production-ready code. You should consider this code ready for final review with your colleague, i.e. this would be the last step before deploying to production.
 
 The aspects of your code we will assess include:
