@@ -27,7 +27,7 @@ Using the JSON response from the endpoint, the patient should be directed throug
 As a patient answers each question, you will need to keep track of how they answered so the data can be sent to the backend and ultimately stored in a database. You should store the answer data in a specific format, an example of which can be found [here](https://gist.github.com/dannyfreed/002230ad612e397455732275212f8036)
 
 ### Requirements/Specs
-- You can complete this challenge using any languages, frameworks, or platforms you'd like
+- You can complete this challenge using any language or framework that you choose
 - Patients should only be able to view/complete assessments that are assigned to them
 - If a patient is assigned more than one assessment, they should be able to answer all questions back-to-back, as if it was a single combined assessment
 - Questions should be displayed one at a time on a given page/screen
