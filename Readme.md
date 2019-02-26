@@ -60,6 +60,5 @@ The aspects of your code we will assess include:
 - **Correctness**: does the application do what was asked? If there is anything missing, does the README explain why it is missing?
 - **Code quality**: is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Does object-oriented code follows principles such as the single responsibility principle? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
 - **Security**: are there any obvious vulnerabilities?
-- **UX**: is the web interface understandable and pleasing to use? Is the API intuitive?
-- **Technical choices**: do choices of libraries, databases, architecture etc. seem appropriate for the chosen application?
-- **Production-readiness**: does the code include monitoring? logging? proper error handling?
+- **UX**: is the web interface understandable and pleasing to use?
+- **Technical choices**: do choices of libraries, frameworks, etc seem appropriate for the chosen application?
