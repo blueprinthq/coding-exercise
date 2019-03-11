@@ -10,7 +10,7 @@ You will build a portion of the patient-facing experience that allows an individ
 
 To figure out which assessments a given user is assigned to complete, we’ve created mock endpoints. We have created two test cases for you (feel free to create more on your own), which are presented as two separate endpoints for simplicity:
 
-- [Frank Smith](https://www.mocky.io/v2/5c7164513500006000e9e829)
+- [Frank Smith](https://www.mocky.io/v2/5c86be20340000e21389c26b)
 - [Jane Doe](https://www.mocky.io/v2/5c7164773500007000e9e82a)
 
 *Note: In reality, this is a single endpoint which is passed a user_id, e.g. `GET /patients/assessments`…because there is no concept of a user_id in the mock endpoints, each endpoint represents a different user.*
