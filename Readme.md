@@ -121,7 +121,7 @@ You're free to use whatever language, framework, libraries, tools, editors, sear
 
 # Part II
 ## The challenge
-You will build upon Part I and create a patient-facing user interface to complete the diagnostic screener online. The interface can be built on a web or mobile (iOS or Android) platform.
+You will build upon Part I and create a patient-facing user interface to complete the diagnostic screener. The interface can be built on a web or mobile (iOS or Android) platform.
 
 In order to retrieve the diagnostic screener, you should build an endpoint in your API which returns it as a JSON object in the following form. Alternatively, you may simply load the screener from memory:
 
@@ -205,7 +205,7 @@ This screener always contains:
 - An array of questions
 - An array of answers
 
-Using the JSON form of the screener, you should build an interface that directs the patient through each question one by one. Here's an example of how the experience should look on iOS: https://share.getcloudapp.com/QwulXQQq. (Note: You do not need to build this challenge for a mobile platform specifically, but each question should still be displayed one at a time.)
+Using the JSON form of the screener, you should build an interface that directs the patient through each question one by one. Here's an example of how the experience should look on iOS: https://share.getcloudapp.com/QwulXQQq. (Note: You do not need to build this for a mobile platform specifically, but each question should still be displayed one at a time.)
 
 As a patient answers each question, you will need to keep track of how they answered so the data can be sent to the backend and ultimately stored in a database. **You should store the answer data in the same format as the input for Part I.**
 
@@ -219,8 +219,8 @@ As a patient answers each question, you will need to keep track of how they answ
   - All answer options for the given assessment, as buttons that just display the answer `title` as text
   - The question number out of the total number of questions in all assessments (e.g. `1 out of 8`)
 - Tapping on an answer option should automatically advance the user to the next question
-- Across all screens, display a progress bar that indidcates where the user is in the overall assessment experience that udpates with each completed question
-- Upon answering the final question, you may simply log/print out the data as you would submit it to the backend endpoint in Part I, or actually send it to your API. As a reminder, here is an example of the final format:
+- Across all screens, display a progress bar that indicates where the user is in the overall assessment experience that udpates with each completed question
+- Upon answering the final question, you may simply log/print out the data or send it to the endpoint you built in Part I. As a reminder, here is an example of the format:
 
 ```
 
