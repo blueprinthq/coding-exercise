@@ -213,7 +213,7 @@ As a patient answers each question, you will need to keep track of how they answ
 - You can complete this challenge using any language or framework that you choose
 - Questions should be displayed one at a time on a given page/screen
 - Each page/screen should display:
-  - The assessment `title`
+  - The assessment `title` **(As of 07-13-2020, this can be ignored)**
   - The assessment `display_name`
   - The question `title`
   - All answer options for the given assessment, as buttons that just display the answer `title` as text
