@@ -1,18 +1,18 @@
-You will find the instructions for the code challenge below. Remember, we're not expecting you to create a perfect solution. The challenge is intentionally limited and meant to give us insight into how you think, how you code, and how you communicate a solution to a problem.
+You will find the instructions for the coding exercise below. Remember, we're not expecting you to create a perfect solution. The exercise is intentionally limited and meant to give us insight into how you think, how you code, and how you communicate a solution to a problem.
 
 If you have any questions, feel free to reach out to us directly!
 
-# About the challenge
-At Blueprint, all of our engineers are experienced in full-stack technology. This means we frequently build both the front- and back-end components of a feature. As such, the coding challenge is broken up into two parts: one involving the creation of an API and the other a user interface. It is fine if you do not complete everything. You should be able to work on each independently, though you are encouraged to submit both if you can. You can spend as much or as little time as you’d like on the challenge, however, **we ask that you send us a submission no later than one week after receiving this challenge.**
+# About the exercise
+At Blueprint, all of our engineers are experienced in full-stack technology. This means we frequently build both the front- and back-end components of a feature. As such, the coding exercise is broken up into two parts: one involving the creation of an API and the other a user interface. It is fine if you do not complete everything. You should be able to work on each independently, though you are encouraged to submit both if you can. You can spend as much or as little time as you’d like on the exercise, however, **we ask that you send us a submission no later than one week after receiving this exercise.**
 
 
 # Background and context
 One component of our platform is administering standardized clinical assessments via our mobile app and web interface. In a nutshell, a standardized clinical assessment is a multiple-choice questionnaire that determines symptom severity for disorders such as depression, anxiety, etc. Here’s an [example](https://www.mdcalc.com/phq-9-patient-health-questionnaire-9) of a common assessment for depression called the PHQ-9.
 
-At the moment, clinicians can manually choose and assign assessments to patients, sometimes having to review each assessment before assigning it. In order to improve a clinician's ability to provide the right care, we have recently launched an innovative tool that allows a patient to take a **diagnostic screener** (a special assessment that covers a wide variety of symptoms) using our platform. Our system then scores a patient's response to this screener and automatically assigns assessments based on their symptoms. The goal of this challenge is to see how you would approach developing the same feature with reduced scope. 
+At the moment, clinicians can manually choose and assign assessments to patients, sometimes having to review each assessment before assigning it. In order to improve a clinician's ability to provide the right care, we have recently launched an innovative tool that allows a patient to take a **diagnostic screener** (a special assessment that covers a wide variety of symptoms) using our platform. Our system then scores a patient's response to this screener and automatically assigns assessments based on their symptoms. The goal of this exercise is to see how you would approach developing the same feature with reduced scope. 
 
 # Part I
-## The challenge
+## The exercise
 Build a small API with a single endpoint which accepts a patient's answers to the screener as JSON. Then, score the answers and return the appropriate assessments.
 
 Input:
@@ -117,10 +117,10 @@ As an example, if the input is the same as the example above, the expected outpu
 
 We know this is the expected output because the patient scored >= 2 in the Mania domain and >= 2 in the Anxiety domain.
 
-You're free to use whatever language, framework, libraries, tools, editors, search engines, etc you like in order to complete the challenge.
+You're free to use whatever language, framework, libraries, tools, editors, search engines, etc you like in order to complete the exercise.
 
 # Part II
-## The challenge
+## The exercise
 You will build upon Part I and create a patient-facing user interface to complete the diagnostic screener. The interface can be built on a web or mobile (iOS or Android) platform.
 
 In order to retrieve the diagnostic screener, you should build an endpoint in your API which returns it as a JSON object in the following form. Alternatively, you may simply load the screener from memory:
@@ -210,7 +210,7 @@ Using the JSON form of the screener, you should build an interface that directs 
 As a patient answers each question, you will need to keep track of how they answered so the data can be sent to the backend and ultimately stored in a database. **You should store the answer data in the same format as the input for Part I.**
 
 ### Requirements/Specs
-- You can complete this challenge using any language or framework that you choose
+- You can complete this exercise using any language or framework that you choose
 - Questions should be displayed one at a time on a given page/screen
 - Each page/screen should display:
   - The assessment `title` **(As of 07-13-2020, this can be ignored)**
@@ -264,7 +264,7 @@ As a patient answers each question, you will need to keep track of how they answ
 ```
 
 # Deliverable
-- When you’re done with the coding challenge, you may host it somewhere (e.g. on Amazon EC2, Heroku, Google AppEngine, TestFlight, etc.) or include specific instructions for running the code in your README
+- When you’re done with the coding exercise, you may host it somewhere (e.g. on Amazon EC2, Heroku, Google AppEngine, TestFlight, etc.) or include specific instructions for running the code in your README
 - Please send us a link to the hosted repository with your code (e.g. Github, Bitbucket)
   - If you decide to make two separate repos, send us links to both
 - The repo should include a README that includes the following items:
@@ -277,7 +277,7 @@ As a patient answers each question, you will need to keep track of how they answ
   - Link to your resume or public profile
 
 # How we review
-**We value quality over feature-completeness.** It is fine to leave things aside provided you call them out in your project's README. The goal of this code challenge is to help us identify what you consider production-ready code. You should consider this code ready for final review with your colleague, i.e. this would be the last step before deploying to production.
+**We value quality over feature-completeness.** It is fine to leave things aside provided you call them out in your project's README. The goal of this code exercise is to help us identify what you consider production-ready code. You should consider this code ready for final review with your colleague, i.e. this would be the last step before deploying to production.
 
 The aspects of your code we will assess include:
 - **Clarity**: Does the README clearly and concisely explains the problem and solution? Are technical tradeoffs explained?
