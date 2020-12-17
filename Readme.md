@@ -275,6 +275,7 @@ As a patient answers each question, you will need to keep track of how they answ
   - Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project
   - Link to other code you're particularly proud of
   - Link to your resume or public profile
+- **Please send these deliverables over at least 48 hours in advance of your scheduled interview time so we can review and come prepared with questions! If we don't receive your submission, we may opt to cancel or reschedule the interview so we can be sure we're using your and our time effectively**
 
 # How we review
 **We value quality over feature-completeness.** It is fine to leave things aside provided you call them out in your project's README. The goal of this code exercise is to help us identify what you consider production-ready code. You should consider this code ready for final review with your colleague, i.e. this would be the last step before deploying to production.
