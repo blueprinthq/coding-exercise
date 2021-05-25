@@ -272,6 +272,10 @@ As a patient answers each question, you will need to keep track of how they answ
   - Instructions for running the code locally (if not hosted)
   - Description of the problem and solution
   - Reasoning behind your technical choices
+  - Describe how you would deploy this a true production app on the platform of your choice:
+    - How would ensure the application is highly available and performs well?
+    - How would you secure it?
+    - What would you add to make it easier to troubleshoot problems while it is running live?
   - Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project
   - Link to other code you're particularly proud of
   - Link to your resume or public profile
@@ -287,3 +291,4 @@ The aspects of your code we will assess include:
 - **Security**: Are there any obvious vulnerabilities?
 - **UX**: Is the web interface understandable and pleasing to use?
 - **Technical choices**: Do choices of libraries, frameworks, etc seem appropriate for the chosen application?
+- **Production readiness thinking**: Does the description of a production deployment address important real-world topics like reliability and security?
