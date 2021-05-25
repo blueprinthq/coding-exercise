@@ -205,7 +205,7 @@ This screener always contains:
 - An array of questions
 - An array of answers
 
-Using the JSON form of the screener, you should build an interface that directs the patient through each question one by one. Here's an example of how the experience should look on iOS: https://share.getcloudapp.com/QwulXQQq. (Note: You do not need to build this for a mobile platform specifically, but each question should still be displayed one at a time.)
+Using the JSON form of the screener, you should build an interface that directs the patient through each question one by one. That is, each question should be displayed on the view one at a time.
 
 As a patient answers each question, you will need to keep track of how they answered so the data can be sent to the backend and ultimately stored in a database. **You should store the answer data in the same format as the input for Part I.**
 
