@@ -205,7 +205,7 @@ This screener always contains:
 - An array of questions
 - An array of answers
 
-Using the JSON form of the screener, you should build an interface that directs the patient through each question one by one. Here's an example of how the experience should look on iOS: https://share.getcloudapp.com/QwulXQQq. (Note: You do not need to build this for a mobile platform specifically, but each question should still be displayed one at a time.)
+Using the JSON form of the screener, you should build an interface that directs the patient through each question one by one. That is, each question should be displayed on the view one at a time.
 
 As a patient answers each question, you will need to keep track of how they answered so the data can be sent to the backend and ultimately stored in a database. **You should store the answer data in the same format as the input for Part I.**
 
@@ -213,7 +213,7 @@ As a patient answers each question, you will need to keep track of how they answ
 - You can complete this exercise using any language or framework that you choose
 - Questions should be displayed one at a time on a given page/screen
 - Each page/screen should display:
-  - The assessment `title` **(As of 07-13-2020, this can be ignored)**
+  - The prompt for the user (the `title` of the first `section`)
   - The assessment `display_name`
   - The question `title`
   - All answer options for the given assessment, as buttons that just display the answer `title` as text
@@ -272,6 +272,10 @@ As a patient answers each question, you will need to keep track of how they answ
   - Instructions for running the code locally (if not hosted)
   - Description of the problem and solution
   - Reasoning behind your technical choices
+  - Describe how you would deploy this as a true production app on the platform of your choice:
+    - How would ensure the application is highly available and performs well?
+    - How would you secure it?
+    - What would you add to make it easier to troubleshoot problems while it is running live?
   - Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project
   - Link to other code you're particularly proud of
   - Link to your resume or public profile
@@ -287,3 +291,4 @@ The aspects of your code we will assess include:
 - **Security**: Are there any obvious vulnerabilities?
 - **UX**: Is the web interface understandable and pleasing to use?
 - **Technical choices**: Do choices of libraries, frameworks, etc seem appropriate for the chosen application?
+- **Production readiness thinking**: Does the description of a production deployment address important real-world topics like reliability and security?
