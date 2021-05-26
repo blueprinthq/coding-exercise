@@ -272,7 +272,7 @@ As a patient answers each question, you will need to keep track of how they answ
   - Instructions for running the code locally (if not hosted)
   - Description of the problem and solution
   - Reasoning behind your technical choices
-  - Describe how you would deploy this a true production app on the platform of your choice:
+  - Describe how you would deploy this as a true production app on the platform of your choice:
     - How would ensure the application is highly available and performs well?
     - How would you secure it?
     - What would you add to make it easier to troubleshoot problems while it is running live?
