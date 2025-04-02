@@ -1,9 +1,9 @@
 You will find the instructions for the coding exercise below. Remember, we're not expecting you to create a perfect solution. The exercise is intentionally limited and meant to give us insight into how you think, how you code, and how you communicate a solution to a problem.
 
-If you have any questions, feel free to reach out to us directly!
+If you have any questions, feel free to reach out to us!
 
 # About the exercise
-At Blueprint, all of our engineers are experienced in full-stack technology. This means we frequently build both the front- and back-end components of a feature. As such, the coding exercise is broken up into two parts: one involving the creation of an API and the other a user interface. It is fine if you do not complete everything. You should be able to work on each independently, though you are encouraged to submit both if you can. You can spend as much or as little time as you’d like on the exercise, however, **we ask that you send us a submission no later than one week after receiving this exercise.**
+At Blueprint, all of our engineers are experienced in full-stack technology. This means we frequently build both the front- and back-end components of a feature. As such, the coding exercise is broken up into two parts: one involving the creation of an API and the other a user interface. You should be able to work on each independently, though you are encouraged to submit both if you can. You can spend as much or as little time as you’d like on the exercise, however, **we ask that you send us a submission no later than one week after receiving this exercise.**
 
 
 # Background and context
@@ -12,7 +12,7 @@ One component of our platform is administering standardized clinical assessments
 At the moment, clinicians can manually choose and assign assessments to patients, sometimes having to review each assessment before assigning it. In order to improve a clinician's ability to provide the right care, we have recently launched an innovative tool that allows a patient to take a **diagnostic screener** (a special assessment that covers a wide variety of symptoms) using our platform. Our system then scores a patient's response to this screener and automatically assigns assessments based on their symptoms. The goal of this exercise is to see how you would approach developing the same feature with reduced scope. 
 
 # Part I
-## The exercise
+## The server
 Build a small API with a single endpoint which accepts a patient's answers to the screener as JSON. Then, score the answers and return the appropriate assessments.
 
 Input:
@@ -59,7 +59,7 @@ Input:
 }
 ```
 
-Separate from the input, each question will have an associated domain as indicated by the following domain mapping. This domain mapping should be stored and retrieved from persistence using a system (file storage, nosql, postgres, etc) of your choosing:
+Separate from the input, each question will have an associated domain as indicated by the following domain mapping. This domain mapping should be stored and retrieved from persistence using a system (such as file storage, relational database, document database) of your choosing:
 
 ```
 [
@@ -120,8 +120,8 @@ We know this is the expected output because the patient scored >= 2 in the Mania
 You're free to use whatever language, framework, libraries, tools, editors, search engines, etc you like in order to complete the exercise.
 
 # Part II
-## The exercise
-You will build upon Part I and create a patient-facing user interface to complete the diagnostic screener. The interface can be built on a web or mobile (iOS or Android) platform.
+## The user interface
+You will build upon Part I and create a patient-facing user interface to complete the diagnostic screener. The interface should be built as a web application (though we offer mobile apps to our customers as well).
 
 In order to retrieve the diagnostic screener, you should build an endpoint in your API which returns it as a JSON object in the following form. Alternatively, you may simply load the screener from memory:
 
@@ -211,8 +211,8 @@ As a patient answers each question, you will need to keep track of how they answ
 
 ### Requirements/Specs
 - You can complete this exercise using any language or framework that you choose
-- Questions should be displayed one at a time on a given page/screen
-- Each page/screen should display:
+- Questions should be displayed one at a time to the user
+- Each page or view should display:
   - The prompt for the user (the `title` of the first `section`)
   - The assessment `display_name`
   - The question `title`
@@ -264,10 +264,10 @@ As a patient answers each question, you will need to keep track of how they answ
 ```
 
 # Deliverable
-- When you’re done with the coding exercise, you may host it somewhere (e.g. on Amazon EC2, Heroku, Google AppEngine, TestFlight, etc.) or include specific instructions for running the code in your README
-- Please send us a link to the hosted repository with your code (e.g. Github, Bitbucket)
-  - If you decide to make two separate repos, send us links to both
-- The repo should include a README that includes the following items:
+- When you’re done with the coding exercise, you may host it somewhere (for example on Amazon AWS, Heroku, Google AppEngine, Vercel, etc.) or include specific instructions for running the code in your README
+- Please send us a link to the hosted repository with your code (for example on Github, Bitbucket, etc.)
+  - If you decide to make two separate repositories, send us links to both
+- The repositories should include a README that includes the following items:
   - Link to to the hosted application (if there is one)
   - Instructions for running the code locally (if not hosted)
   - Description of the problem and solution
@@ -279,15 +279,14 @@ As a patient answers each question, you will need to keep track of how they answ
   - Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project
   - Link to other code you're particularly proud of
   - Link to your resume or public profile
-- **Please send these deliverables over at least 48 hours in advance of your scheduled interview time so we can review and come prepared with questions! If we don't receive your submission, we may opt to cancel or reschedule the interview so we can be sure we're using your and our time effectively**
 
 # How we review
-**We value quality over feature-completeness.** It is fine to leave things aside provided you call them out in your project's README. The goal of this code exercise is to help us identify what you consider production-ready code. You should consider this code ready for final review with your colleague, i.e. this would be the last step before deploying to production.
+**We value quality over quantity.** If you don't complete certain portions, call them out in your project's README. The goal of this code exercise is to help us identify what you consider production-ready code. You should consider this code ready for final review with your colleague, i.e. this would be the last step before deploying to production.
 
 The aspects of your code we will assess include:
 - **Clarity**: Does the README clearly and concisely explains the problem and solution? Are technical tradeoffs explained?
 - **Correctness**: Does the application do what was asked? If there is anything missing, does the README explain why it is missing?
-- **Code quality**: Is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Does object-oriented code follow principles such as the single responsibility principle? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
+- **Code quality**: Is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
 - **Security**: Are there any obvious vulnerabilities?
 - **UX**: Is the web interface understandable and pleasing to use?
 - **Technical choices**: Do choices of libraries, frameworks, etc seem appropriate for the chosen application?
